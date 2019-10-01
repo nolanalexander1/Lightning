@@ -27,5 +27,6 @@ void mousePressed()
 {
   startX = 0;
   startY = 0;
-  strokeW = 10;
+  endX = 0;
+  endY = 0;
 }
