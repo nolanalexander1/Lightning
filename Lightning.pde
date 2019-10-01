@@ -11,6 +11,13 @@ void setup()
 void draw()
 {
   stroke(255, 229, 36);
+  if(mousePressed){
+    startX = (int)(Math.random()*300);
+    startY = 0;
+    endX = 0;
+    endY = 0;
+    strokeW = 10;
+  }
   while(endY <= 300){
     strokeWeight(strokeW);
     endX = startX + (int)(Math.random()*20) - 10;
@@ -22,11 +29,4 @@ void draw()
       strokeW = strokeW - 0.5;
     }
   }
-}
-void mousePressed()
-{
-  startX = 0;
-  startY = 0;
-  endX = 0;
-  endY = 0;
 }
